@@ -25,7 +25,7 @@ def start():
     # make the socket non blocking y default
     lora_socket.setblocking(False)
 
-    prepare_channels(lora, 2, 2)
+    #prepare_channels(lora, 2, 2) #How do I use this??
 
     lora.callback(trigger=( LoRa.RX_PACKET_EVENT |
                             LoRa.TX_PACKET_EVENT |
